@@ -32,7 +32,7 @@ class KmController {
             ];
             // atraer cuantos datos existen
             const countData = yield kmDAO_1.dao.countData();
-            console.log(countData);
+            //console.log(countData);
             const dataC = countData[0].count;
             // redireccion
             res.render('kmeans', { options, dataC });
@@ -47,7 +47,7 @@ class KmController {
             const k = req.body.k;
             // obtener datos por columnas seleccionadas
             const response = yield kmDAO_1.dao.getData(x, y);
-            console.log(response);
+            //console.log(response);
             
             // verificar existencia de datos
             if (response.length > 0) {
@@ -122,7 +122,7 @@ class KmController {
                         break;
                 }
                 // funcion para scalar valores en x
-                console.log(xA);
+                //console.log(xA);
                 let resX = [];
                 let maxRangeX = Math.max.apply(Math, xA);
                 let minRangeX = Math.min.apply(Math, xA);
@@ -228,7 +228,7 @@ class KmController {
                 // guardar datos en BD
                 const response = yield kmDAO_1.dao.saveData(signo, genero, edad, sueldo, parejas);
                 // verificar lineas afectadas
-                console.log(response);
+                //console.log(response);
                 if (response.affectedRows > 0) {
                     return res.sendStatus(200);
                 }

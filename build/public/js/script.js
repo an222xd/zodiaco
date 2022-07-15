@@ -85,7 +85,7 @@ async function connect(data, context, method) {
     } catch (e) {
         alert('Error en consulta');
         active();
-        console.log(e);
+        //console.log(e);
     }
 }
 

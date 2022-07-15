@@ -51,7 +51,7 @@ class KmDAO {
                 const result = yield database_1.default.then((connection) => __awaiter(this, void 0, void 0, function* () {
                     return yield connection.query(`INSERT INTO datosu (Mes, Ego, Impulsivo, Dinero, Razon)VALUES (${signo}, ${genero}, ${edad}, ${sueldo}, ${parejas})`);
                 }));
-                console.log(result.protocol41);
+                //console.log(result.protocol41);
                 return result;
             }
             catch (err) {
@@ -65,7 +65,7 @@ class KmDAO {
                 const result = yield database_1.default.then((connection) => __awaiter(this, void 0, void 0, function* () {
                     return yield connection.query(`SELECT ${x}, ${y} FROM datosu`);
                 }));
-                console.log(result);
+                //console.log(result);
                 return result;
             }
             catch (err) {
@@ -79,7 +79,7 @@ class KmDAO {
                 const result = yield database_1.default.then((connection) => __awaiter(this, void 0, void 0, function* () {
                     return yield connection.query(`SELECT COUNT(*) as count FROM datosu`);
                 }));
-                console.log(result);
+                //console.log(result);
                 return result;
             }
             catch (err) {
