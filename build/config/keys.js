@@ -3,10 +3,10 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = {
     database: {
-        host: process.env.SERVER,
-        database: process.env.DATABASE,
-        user: process.env.USER,
-        password: process.env.PASSWORD,
-        port: 3306,
+        host: "sql538.main-hosting.eu",
+        database: "u544016274_kmeans",
+        user: "u544016274_kevynC0rtez",
+        password: "_YHHq5xrmXV_q86KS#",
+        port: 3306
     }
 };
