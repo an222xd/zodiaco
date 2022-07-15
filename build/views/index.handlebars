@@ -1,0 +1,110 @@
+<main>
+    <center>
+    <div class="card text-center border-primary" style="width: 80rem;" >
+        <div class="card-body text-primary">
+            Se agradece su tiempo para realizar esta encuesta, los datos se usaran para fines educativos.
+        </div>
+        <div class="card-body">
+            <a href="/chartPage" class="card-link btn btn-primary">Gráficar encuestas</a>
+        </div>
+    </div>
+    </center>
+    <br>
+    <br>
+    <center>
+    <div class="card border-primary mb-3" style="width: 45rem;">
+        <div class="card-header text-primary ">
+            Responde la encuesta
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+            <div class="card-body border-primary">
+                <label for="signoZ">Selecciona tu mes de nacimiento:</label><br>
+                <select class="custom-select" name="signoZ" id="signoZ">
+                    <option value="0">Selecciona...</option>
+                    <option value="1">Enero</option>
+                    <option value="2">Febrero</option>
+                    <option value="3">Marzo</option>
+                    <option value="4">Abril</option>
+                    <option value="5">Mayo</option>
+                    <option value="6">Junio</option>
+                    <option value="7">Julio</option>
+                    <option value="8">Agosto</option>
+                    <option value="9">Septiembre</option>
+                    <option value="10">Octubre</option>
+                    <option value="11">Noviembre</option>
+                    <option value="12">Diciembre</option>
+                </select>
+            </div>
+            </li>
+
+            <li class="list-group-item">
+            <div class="card-body">
+                <label for="ego">Del 1 al 5 ¿Qué tan egocéntrico te consideras?</label><br>
+                <select class="custom-select" name="ego" id="ego">
+                    <option value="0">Selecciona...</option>
+                    <option value="1">"1"</option>
+                    <option value="2">"2"</option>
+                    <option value="3">"3"</option>
+                    <option value="4">"4"</option>
+                    <option value="5">"5"</option>
+                </select>
+            </div>
+            </li>
+
+            <li class="list-group-item">
+            <div class="card-body text-center">
+                <label for="impulsivo">Del 1 al 5 ¿Qué tan impulsivo te consideras?</label><br>
+                    <select class="custom-select" name="impulsivo" id="impulsivo">
+                        <option value="0">Selecciona...</option>
+                        <option value="1">"1"</option>
+                        <option value="2">"2"</option>
+                        <option value="3">"3"</option>
+                        <option value="4">"4"</option>
+                        <option value="5">"5"</option>
+                    </select>
+            </div>
+            </li>
+
+            <li class="list-group-item">
+            <div class="card-body text-center">
+                <label for="dinero">¿Qué tan importante consideras el dinero en tu vida?</label><br>
+                    <select class="custom-select" name="dinero" id="dinero">
+                        <option value="0">Selecciona...</option>
+                        <option value="1">Nada importante</option>
+                        <option value="2">Poco importante</option>
+                        <option value="3">Normal</option>
+                        <option value="4">Muy importante</option>
+                        <option value="5">Demasiado Importante</option>
+                    </select>
+            </div>
+            </li>
+
+            <li class="list-group-item">
+            <div class="card-body text-center">
+                <label for="razon">¿Qué tan importante te es, tener la razón siempre?</label><br>
+                    <select class="custom-select" name="razon" id="razon">
+                        <option value="0">Selecciona...</option>
+                        <option value="1">Nada importante</option>
+                        <option value="2">Poco importante</option>
+                        <option value="3">Normal</option>
+                        <option value="4">Muy importante</option>
+                        <option value="5">Demasiado Importante</option>
+                    </select>
+            </div>
+            </li>
+        </ul>
+            <br>
+            <center>
+            <div class="card-body">
+                <button id="buttonSave" class="btn btn-primary" onclick="saveData()">Guardar datos</button>
+            </div>
+            </center>
+        </div>
+    </div>
+    </center>
+    <br>
+    <br>
+    <br>
+</main>

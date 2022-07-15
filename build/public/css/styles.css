@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 6rem;
+    background: rgb(119, 0, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3vw;
+    font-weight: 800;
+}
+
+main{
+    width: 100vw;
+    height: 50rem;
+}
+
+.anuncio{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.anuncio__div{
+    width: 40%;
+    height: 30%;
+    background: rgba(0, 68, 255, 0.69);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1vw;
+    font-weight: 800;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.anuncio__div_charts{
+    width: 40%;
+    background: rgba(255, 200, 0, 0.69);
+    border-radius: 1rem;
+    padding: 1rem;
+    color: white;
+    margin-top: 5rem;
+}
+
+.formulario{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.formulario__contenido{
+    padding: 4rem;
+    width: 25%;
+    background: #ce90fd;
+    border-radius: 1rem;
+    color: white;
+}
+
+.chart{
+    background-color: aquamarine;
+    padding: 3rem;
+    margin-top: 10rem;
+    width: 80%;
+    border-radius: 1rem;
+}
+
+.footerChart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.CountSpan{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.content{
+    height: 6rem;
+}
+
+.content > *{
+    margin-top: 2rem;
+    display: block;
+}
+
+.content:last-child{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+    margin-top: 1rem ;
+    font-size: 1.5rem;
+}
+
+select, input{
+    width: 100%;
+    height: 2rem;
+}
+
+button{
+    padding: 1em;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    background-color: #00deff;
+    color: white;
+    transition: background-color 1ms;
+}
+
+button:hover{
+    transform: scale(0.9);
+}
+
+button:focus{
+    background-color: #00ccff;
+}
+
+@media screen and (max-width: 601px) {
+    header{
+        font-size:4vw;
+    }
+
+    .anuncio__div{
+        width: 80%;
+        font-size: 3vw;
+    }
+
+    .formulario__contenido{
+        width: 100%;
+        transform: scale(0.9);
+    }
+}

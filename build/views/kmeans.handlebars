@@ -1,0 +1,119 @@
+<main>
+
+    <center>
+    <div class="card text-center border-primary" style="width: 80rem;" >
+        <div class="card-body text-primary">
+            Los datos recabados son totalmente anonimos.
+        </div>
+        <div class="card-body">
+            <a href="/" class="card-link btn btn-primary">Regresar</a>
+            <a href="/chartPage" class="card-link btn btn-primary">Exportar a Excel</a>
+        </div>
+    </div>
+    </center>
+
+    <br>
+
+    <center>
+    <div class="card border-primary mb-3" style="width: 45rem;">
+        <div class="card-header text-primary ">
+            Selecciona las opciones a gráficar
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <div class="card-body border-primary">
+                    <label for="x">Variable "X"</label><br>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">X </span>
+                        <select class="custom-select" name="x" id="x">
+                            <option value="0" selected disabled>Seleccione la variable "X"</option>
+                            <option value="Mes">Mes de nacimiento</option>
+                            <option value="Ego">Que tan egocéntrico</option>
+                            <option value="Impulsivo">Que tan impulsivo</option>
+                            <option value="Dinero">Que tan importante es el dinero</option>
+                            <option value="Razon">Que tan importante es la razón</option>
+                        </select>
+                    </div>
+                    </div>
+                </li>
+            
+            <li class="list-group-item">
+                <div class="card-body border-primary">
+                    <label for="y">Variable "Y"</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">X </span>
+                        <select class="custom-select" name="y" id="y">
+                            <option value="0" disabled selected>Seleccione la variable "Y"</option>
+                            <option value="Mes">Mes de nacimiento</option>
+                            <option value="Ego">Que tan egocéntrico</option>
+                            <option value="Impulsivo">Que tan impulsivo</option>
+                            <option value="Dinero">Que tan importante es el dinero</option>
+                            <option value="Razon">Que tan importante es la razón</option>
+                        </select>
+                    </div>
+                </div>
+            </li>
+            
+            <li class="list-group-item">
+                <div class="card-body border-primary">
+                    <label for="Clusters">Numero de clusters</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Clusters</span>
+                        <input id="Clusters" name="Clusters" type="number" style="width: 515px;" placeholder="Ejemplo: 2">
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-group-item">
+                <div class="card-body border-primary">
+                    <label for="Clusters">Número total de datos</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Total </span>
+                        <input style="width: 535px;" id="Clusters" name="Clusters" type="text" disabled placeholder="{{dataC}}">
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="footerChart">
+                    <button id="buttonSave" class="btn btn-primary" onclick="charts()">Graficar</button>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </div>
+
+    </center>
+
+    <div class="formulario">
+        <div class="chart">
+            <div id="chartContainer" style="height: 400px; width: 100%;"></div>
+        </div>
+    </div>
+    <br>
+    <center>
+        <button id="exportButton" class="btn btn-primary" onclick="print();">Ver en PDF</button>
+    </center>
+    <br>
+
+    <div id="tabla">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+</main>
